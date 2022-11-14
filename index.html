@@ -11,6 +11,9 @@
             margin: 0;
             box-sizing: border-box;
         }
+        body{
+          background: #040f16;
+        }
     .hero__link-behance, .hero__link-tilda-expert, .hero__link-telegram, .hero__link-whatsapp{
       display: flex;
       justify-content: center;
@@ -51,7 +54,7 @@
         display: flex;
         gap: 1.5rem;
     }
-    @media screen and (min-width: 501px){
+    @media screen and (min-width: 900px){
       .hero__link-behance:hover{
       flex: 2 0;
       background-color: #01baef;
@@ -88,6 +91,10 @@
       .title{
         font-size: 3rem;
       }
+      .hero__info{
+        mix-blend-mode: normal;
+        z-index: 9998;
+      }
       .hero__links{
         width: 100%;
         flex-direction: column;
@@ -95,6 +102,9 @@
       }
       .hero__links a {
         width: 100%;
+      }
+      canvas{
+        display: none;
       }
     }
     </style>
